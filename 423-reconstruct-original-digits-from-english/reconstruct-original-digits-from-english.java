@@ -17,12 +17,12 @@ class Solution {
         c[7] = f['s'-'a'] - c[6];
         c[9] = f['i'-'a'] - c[8] - c[6] -c[5];
 
-        String ans = "";
+        StringBuilder sb = new StringBuilder();
         for(int i=0;i<10;i++){
             while(c[i]-->0){
-                ans += i;
+                 sb.append(i);
             }
         }
-        return ans;      
+        return sb.toString();      
     }
 }
