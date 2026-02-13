@@ -23,13 +23,12 @@ class Solution {
     private int count(String s, char start) {
         int mismatch = 0;
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i+=2) {
             if (s.charAt(i) != start) {
                 mismatch++;
             }
-            start = (start == '0') ? '1' : '0';
         }
 
-        return mismatch / 2;
+        return mismatch;
     }
 }
