@@ -9,7 +9,6 @@ class Solution {
         for(int i=0;i<queries.length;i++){
             int n = queries[i];
             int idx = list.indexOf(n);
-            System.out.println(idx);
             ans[i] = idx;
             list.remove(idx);
             list.add(0,n);
